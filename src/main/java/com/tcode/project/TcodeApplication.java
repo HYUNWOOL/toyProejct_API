@@ -11,5 +11,4 @@ public class TcodeApplication {
     public static void main(String[] args) {
         SpringApplication.run(TcodeApplication.class, args);
     }
-
 }
