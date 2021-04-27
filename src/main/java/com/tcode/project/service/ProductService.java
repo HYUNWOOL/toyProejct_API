@@ -30,8 +30,12 @@ public class ProductService {
         return result;
     }
 
-    public ProductDetailResponse getProductDetail(){
-        System.out.println("상품 상세 api를 완성 시켜주세요.");
-        return ProductDetailResponse.builder().id(1).build();
+    public ProductDetailResponse getProductDetail(long id){
+        Product product = productJpaRepository.getOne(id);
+    return ProductDetailResponse.builder()
+        .id(product.getId())
+        .name(product.getName())
+        .price(product.getPrice())
+        .build();
     }
 }
