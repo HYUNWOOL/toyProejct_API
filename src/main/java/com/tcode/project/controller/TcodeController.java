@@ -30,8 +30,8 @@ public class TcodeController {
 
     //상품 상세 api
     @GetMapping(Constant.API + "/products/{productId}")
-    public ResponseEntity<ProductDetailResponse> getProductDetail() {
-        ProductDetailResponse response = service.getProductDetail();
+    public ResponseEntity<ProductDetailResponse> getProductDetail(Long id) {
+        ProductDetailResponse response = service.getProductDetail(id);
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
