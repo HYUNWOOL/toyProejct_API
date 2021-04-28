@@ -35,7 +35,7 @@ public class FlightService {
         amadeus.referenceData.locations.get(
             Params.with("keyword", code).and("subType", Locations.AIRPORT));
 
-    if (locations[0].getResponse().getStatusCode() != 200) {
+    if (locations.length>0 && locations[0].getResponse().getStatusCode() != 200) {
       log.error("Wrong status code: " + locations[0].getResponse().getStatusCode());
       throw new RuntimeException(ErrorMessage.FLIGHT_SEARCH_UNKNOWN_ERROR);
     }
