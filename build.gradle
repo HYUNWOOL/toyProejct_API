@@ -27,6 +27,8 @@ dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
+    compile "com.amadeus:amadeus-java:5.7.2"
+
     // springfox-swagger2
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
