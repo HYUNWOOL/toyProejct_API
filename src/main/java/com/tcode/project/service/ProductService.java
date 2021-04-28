@@ -31,11 +31,11 @@ public class ProductService {
     }
 
     public ProductDetailResponse getProductDetail(long id){
-        Product product = productJpaRepository.getOne(id);
+        Optional<Product> product = productJpaRepository.findById(id);
     return ProductDetailResponse.builder()
-        .id(product.getId())
-        .name(product.getName())
-        .price(product.getPrice())
+        .id(product.get().getId())
+        .name(product.get().getName())
+        .price(product.get().getPrice())
         .build();
     }
 }
