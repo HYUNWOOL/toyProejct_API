@@ -4,6 +4,14 @@ amadeus:
   apiKey: 0IY3aBOHlysqRnLdxmJpWnZ5CjUrr2Vf
   apiSecret: D9XiaCmaKsgecobJ
 # Database Settings
+
+alphaVantage:
+  key: MPRTFA3UDSO9U59W
+
+publicDay:
+  key: 7da85e6ec55b4355944215f8b6d124c7
+
+
 spring:
 
   datasource:

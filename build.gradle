@@ -33,4 +33,9 @@ dependencies {
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
 
+
+    //gson
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile group: 'org.json', name: 'json', version: '20210307'
+
 }
